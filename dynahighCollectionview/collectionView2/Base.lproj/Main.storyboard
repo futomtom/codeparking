@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fft-Nz-2lC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lao-PL-Skp">
+            <objects>
+                <collectionViewController id="fft-Nz-2lC" customClass="ViewController" customModule="collectionView2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="S01-0a-LtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Hl-ws-0JI">
+                            <size key="itemSize" width="361" height="99"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="dru-YH-Dh1" customClass="myCell" customModule="collectionView2" customModuleProvider="target">
+                                <rect key="frame" x="7" y="0.0" width="361" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulZ-OW-8BL">
+                                            <rect key="frame" x="10" y="0.0" width="341" height="99"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="99" id="6a7-vr-tYG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="6a7-vr-tYG"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="ulZ-OW-8BL" firstAttribute="top" secondItem="dru-YH-Dh1" secondAttribute="top" id="HGK-WG-5re"/>
+                                    <constraint firstAttribute="trailing" secondItem="ulZ-OW-8BL" secondAttribute="trailing" constant="10" id="goX-cJ-AiX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ulZ-OW-8BL" secondAttribute="bottom" id="h2v-QY-9Ku"/>
+                                    <constraint firstItem="ulZ-OW-8BL" firstAttribute="leading" secondItem="dru-YH-Dh1" secondAttribute="leading" constant="10" id="zZM-0E-ZhH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="highConstraint" destination="6a7-vr-tYG" id="dQh-IF-Aec"/>
+                                    <outlet property="title" destination="ulZ-OW-8BL" id="2Uv-Uv-MT7"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="fft-Nz-2lC" id="NWO-cU-jjc"/>
+                            <outlet property="delegate" destination="fft-Nz-2lC" id="lPc-ST-2E7"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="layout" destination="5Hl-ws-0JI" id="d7e-eW-OxT"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUm-DN-C3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+</document>
