@@ -16,12 +16,13 @@ class myCell: UICollectionViewCell {
         
     }
  */
-    @IBOutlet weak var highConstraint: NSLayoutConstraint!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
     
   
     override func awakeFromNib() {
         title.preferredMaxLayoutWidth = 300
+        textLabel.preferredMaxLayoutWidth = 300
     }
     
  /*

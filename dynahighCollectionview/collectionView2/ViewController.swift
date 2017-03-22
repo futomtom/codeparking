@@ -93,10 +93,10 @@ extension ViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myCell
         
-        //	cell.titleLabel.text = "\(indexPath.row) \(dataSource[indexPath.row]["title"]!)"
-         cell.title.text = "\(dataSource[indexPath.row]["text"]!)"
+         cell.title.text = "\(indexPath.row) \(dataSource[indexPath.row]["title"]!)"
+         cell.textLabel.text = "\(dataSource[indexPath.row]["text"]!)"
           // cell.text = "\(dataSource[0]["text"]!)"
-        let width = UIScreen.main.bounds.width - 20
+     //   let width = UIScreen.main.bounds.width - 20
      //   let high = heightForText(dataSource[0]["text"]!,width: width)
     //    cell.setCellHeight(high)
     
